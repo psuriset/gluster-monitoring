@@ -1,0 +1,16 @@
+---
+# Build and upload the grafana template for the server
+
+- hosts: grafana
+  remote_user: root
+  gather_facts: false
+  vars_files:
+    - ../conf/glustermon.yaml
+  vars:
+    overwrite_existing: true
+    dashboards:
+      - template_name: gluster34
+        process_list_name: gluster34
+  roles:
+    - dashboard-generic
+...

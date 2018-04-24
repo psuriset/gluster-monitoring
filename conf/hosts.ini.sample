@@ -1,0 +1,8 @@
+[gluster]
+gluster1.example.com
+gluster2.example.com
+gluster3.example.com
+[graphite]
+#graphite.example.com
+[grafana]
+#grafana.example.com
